@@ -1,0 +1,116 @@
+/*header*/
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo p {
+width: 23%;
+padding: 1%;
+}
+
+.logo p {
+    display: inline-block;
+}
+p {
+    display: inline-block;
+}
+
+nav {
+    width: 80%;
+    padding: 1%;
+    background-color: rgb(0, 217, 255)
+}
+nav ul {
+    float: right;
+}
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    background-color: rgb(0, 136, 255);
+    padding: 20px 0px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer ul li {
+    padding: 5px 10 px;
+}
+
+.flexContainer {
+    display: flex;
+}
+.flexContainer div {
+    width: 33%;
+    padding: 40px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: auto, auto;
+    grid-template-areas:
+        "project1_image project1_content"
+        "project3_image project3_content"
+        "project2_image project2_content"; 
+    align-items: space-between;
+    ;
+}
+
+.project1_img {
+    grid-area: project1_image;
+}
+.project1_cont {
+    grid-area: project1_content;
+    margin-left: 40px;
+}
+.project2_img {
+    grid-area: project2_image;
+}
+.project2_cont {
+    grid-area: project2_content;
+    margin-left: 40px;
+}
+.project3_img {
+    grid-area: project3_image;
+}
+.project3_cont {
+    grid-area: project3_content;
+    margin-left: 40px;
+}
+.workGrid img {
+    width: 100%;
+}
+
+.workGrid button {
+    background-color:white;
+    color:black;
+    border: 2px solid rgba(9, 153, 167, 0.644);
+    padding: 8px 24px 8px 24px
+}
+
+.workGrid button:hover {
+    background-color: rgba(9, 153, 167, 0.644);
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+.flexContainer {
+    flex-direction: column;
+}
+.flexContainer > div {
+width: 100%;
+}
+
+}
