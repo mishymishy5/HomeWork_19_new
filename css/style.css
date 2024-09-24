@@ -68,41 +68,23 @@ footer ul li {
     ;
 }
 
-.project1_img {
-    grid-area: project1_image;
-}
-.project1_cont {
-    grid-area: project1_content;
-    margin-left: 40px;
-}
-.project2_img {
-    grid-area: project2_image;
-}
-.project2_cont {
-    grid-area: project2_content;
-    margin-left: 40px;
-}
-.project3_img {
-    grid-area: project3_image;
-}
-.project3_cont {
-    grid-area: project3_content;
-    margin-left: 40px;
-}
-.workGrid img {
-    width: 100%;
-}
+
 
 .workGrid button {
     background-color:white;
     color:black;
     border: 2px solid rgba(9, 153, 167, 0.644);
-    padding: 8px 24px 8px 24px
+    padding: 8px 24px 8px 24px;
+    margin-top: 24px;
 }
 
 .workGrid button:hover {
     background-color: rgba(9, 153, 167, 0.644);
     color: white;
+}
+
+.viewAll {
+    text-align: center;
 }
 
 @media only screen and (max-width:600px){
@@ -113,4 +95,62 @@ footer ul li {
 width: 100%;
 }
 
+.workGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, auto, auto, auto;
+    grid-template-areas: 
+    "project1image"
+    "project1content"
+    "project2image"
+    "project2content"
+    "project3image"
+    "project3content"
+    ;
 }
+
+
+/*Accordian Element*/
+
+.accordianWrapper {
+    max-width: 500px;
+}  
+.accordian {
+    background-color: black;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.accordian > div {
+    padding: 20px;
+}
+
+.text {
+    width: 93%;
+}
+.indicator {
+    background-color: #545454;
+    width: 7%;
+    text-align: center;
+}
+
+.toggleMe {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    display: none;
+}
+.toggleMe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toggleMe ul li {
+    font-size: 18px;
+    margin: 0;
+    display: block;
+    padding: 20px;
+}
+
