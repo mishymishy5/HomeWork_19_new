@@ -75,7 +75,6 @@ footer ul li {
     color:black;
     border: 2px solid rgba(9, 153, 167, 0.644);
     padding: 8px 24px 8px 24px;
-    margin-top: 24px;
 }
 
 .workGrid button:hover {
@@ -109,12 +108,13 @@ width: 100%;
 }
 
 
-/*Accordian Element*/
+/*Accordian Element1*/
 
 .accordianWrapper {
     max-width: 500px;
+    
 }  
-.accordian {
+.accordian1 {
     background-color: black;
     font-size: 18px;
     font-family: Helvetica;
@@ -122,7 +122,7 @@ width: 100%;
     display: flex;
     cursor: pointer;
 }
-.accordian > div {
+.accordian1 > div {
     padding: 20px;
 }
 
@@ -135,22 +135,114 @@ width: 100%;
     text-align: center;
 }
 
-.toggleMe {
+.toggleMe1 {
     background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     display: none;
 }
-.toggleMe ul {
+.toggleMe1 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.toggleMe ul li {
+.toggleMe1 ul li {
+    font-size: 18px;
+    margin: 0;
+    display: block;
+    padding: 20px;
+}
+}
+
+/*Accordian Element2*/
+
+.accordianWrapper {
+    max-width: 500px;
+}  
+.accordian2 {
+    background-color: black;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.accordian2 > div {
+    padding: 20px;
+}
+
+.text {
+    width: 93%;
+}
+.indicator {
+    background-color: #545454;
+    width: 7%;
+    text-align: center;
+}
+
+.toggleMe2 {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    display: none;
+}
+.toggleMe2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toggleMe2 ul li {
     font-size: 18px;
     margin: 0;
     display: block;
     padding: 20px;
 }
 
+/*Accordian Element3*/
+
+.accordianWrapper {
+    max-width: 500px;
+}  
+.accordian3 {
+    background-color: black;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.accordian3 > div {
+    padding: 20px;
+}
+
+.text {
+    width: 93%;
+    background-color: #55a7f9;
+    
+}
+.indicator {
+    background-color: #545454;
+    width: 7%;
+    text-align: center;
+}
+
+.toggleMe3 {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    display: none;
+}
+.toggleMe3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toggleMe3 ul li {
+    font-size: 18px;
+    margin: 0;
+    display: block;
+    padding: 20px;
+}
